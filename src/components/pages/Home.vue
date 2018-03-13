@@ -3,12 +3,11 @@
     <v-slide-y-transition mode="out-in">
       <v-layout column align-center>
         <img src="@/assets/logo.png" alt="Vuetify.js" class="mb-5">
-        <v-chip color="primary" text-color="white">{{ texto }}</v-chip>
         <blockquote>
-          &#8220;bla bla bla bla bla bla bla bla bla.&#8221;
+          Vue Seed Project
           <footer>
             <small>
-              <em>&mdash;By Salsicha</em>
+              <em>&mdash;Projeto Vue template com Vuetify.</em>
             </small>
           </footer>
         </blockquote>

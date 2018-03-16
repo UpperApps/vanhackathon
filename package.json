@@ -1,8 +1,8 @@
 {
-  "name": "vue-seed-project",
+  "name": "vanhackathon",
   "version": "1.0.0",
-  "description": "Projeto template para novos projetos com Vue.js.",
-  "author": "Garagem",
+  "description": "Projeto template para o VanHackathon.",
+  "author": "Rodrigo Melo",
   "private": true,
   "scripts": {
     "dev": "webpack-dev-server --inline --progress --config build/webpack.dev.conf.js",

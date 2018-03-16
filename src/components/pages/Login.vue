@@ -2,17 +2,19 @@
   <v-container grid-list-md text-xs-center>
     <v-layout column>
       <v-flex xs12 sm6 offset-sm3>
+        <v-toolbar dark color="primary">
+          <v-toolbar-side-icon>
+            <v-icon>account_circle</v-icon>
+          </v-toolbar-side-icon>
+          <v-toolbar-title>Login</v-toolbar-title>
+        </v-toolbar>
+
         <v-card>
-          <v-card-title primary-title>
-            <div>
-              <h3 class="headline mb-0">Login</h3>
-            </div>
-          </v-card-title>
           <v-container fill-height fluid>
             <v-layout fill-height>
               <v-flex xs12 align-end flexbox>
                 <v-form v-model="valid" ref="form" lazy-validation>
-                  <v-text-field label="Name" v-model="name" :rules="nameRules" :counter="10" required></v-text-field>
+                  <v-text-field label="User Name" v-model="user" :rules="userRules" :counter="10" required></v-text-field>
                   <v-text-field label="E-mail" v-model="email" :rules="emailRules" required></v-text-field>
                 </v-form>
               </v-flex>
@@ -32,10 +34,10 @@
   export default {
     data: () => ({
       valid: true,
-      name: '',
-      nameRules: [
-        v => !!v || 'Name is required',
-        v => (v && v.length <= 10) || 'Name must be less than 10 characters'
+      user: '',
+      userRules: [
+        v => !!v || 'User name is required',
+        v => (v && v.length <= 10) || 'User name must be less than 10 characters'
       ],
       email: '',
       emailRules: [

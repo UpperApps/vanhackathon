@@ -7,8 +7,19 @@ import Vuetify from 'vuetify'
 import VueResource from 'vue-resource'
 import VeeValidate from 'vee-validate'
 import 'vuetify/dist/vuetify.min.css'
+import colors from 'vuetify/es5/util/colors'
 
-Vue.use(Vuetify)
+Vue.use(Vuetify, {
+  theme: {
+    primary: colors.blueGrey.base,
+    secondary: colors.blueGrey.lighten2,
+    accent: colors.orange.accent4,
+    error: colors.red.base,
+    warning: colors.yellow.base,
+    info: colors.blue.base,
+    success: colors.green.base
+  }
+})
 
 Vue.use(VueResource)
 // Configura de forma centralizada o caminho (path) para o servidor.
